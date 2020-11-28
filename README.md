@@ -10,3 +10,5 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
 
 - 'Meta_DataDependentPrior'
    to analyze the influence of data dependent prior
+- 'requirements.txt'
+   version of libraries
