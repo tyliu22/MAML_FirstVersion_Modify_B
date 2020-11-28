@@ -1,0 +1,6 @@
+Log file created at  2020-11-22 17:11:51
+Run script: DP_main_Meta_Bayes.py
+Parameters:
+Namespace(K_Shot_MetaTest=100, K_Shot_MetaTrain=100, N_Way=5, batch_size=128, chars_split_type='random', complexity_type='NewBoundSeeger', data_path='/home/tianyliu/PycharmProjects/Meta_Learning_Paper_Code/MAML_FirstVersion_Modify_B/ML_data_sets', data_prior_batch_size=64, data_prior_ratio=0.3, data_prior_test_epochs=30, data_prior_train_epochs=10, data_source='MNIST', data_transform='Shuffled_Pixels', limit_train_samples_in_test_tasks=0, load_model_path='', loss_type='CrossEntropy', lr=0.001, meta_batch_size=16, mode='MetaTrain', model_name='FcNet3', n_inner_steps=50, n_meta_test_epochs=100, n_meta_train_chars=1200, n_meta_train_classes=500, n_meta_train_epochs=50, n_pixels_shuffles=200, n_test_tasks=20, n_train_tasks=10, result_dir='saved/DP_ShuffledPixels200_TasksN/10', run_name='DP_ShuffledPixels200_TasksN/10', seed=1, test_batch_size=128)
+--------------------------------------------------
+--- Generating 10 training-tasks

@@ -1,0 +1,359 @@
+Log file created at  2020-11-24 14:23:37
+Run script: main_Meta_Bayes.py
+Parameters:
+Namespace(K_Shot_MetaTest=100, K_Shot_MetaTrain=100, N_Way=5, batch_size=128, chars_split_type='random', complexity_type='PAC_Bayes_variational_role', data_path='/home/tianyliu/PycharmProjects/Meta_Learning_Paper_Code/MAML_FirstVersion_Modify_B/ML_data_sets', data_source='MNIST', data_transform='Shuffled_Pixels', limit_train_samples_in_test_tasks=0, load_model_path='', loss_type='CrossEntropy', lr=0.001, meta_batch_size=16, mode='MetaTrain', model_name='FcNet3', n_inner_steps=50, n_meta_test_epochs=20, n_meta_train_chars=1200, n_meta_train_classes=500, n_meta_train_epochs=50, n_pixels_shuffles=200, n_test_tasks=20, n_train_tasks=10, result_dir='saved/ShuffledPixels200_TasksN/10', run_name='ShuffledPixels200_TasksN/10', seed=1, test_batch_size=128)
+--------------------------------------------------
+--- Generating 10 training-tasks
+Stochastic-FcNet3
+---- Meta-Training set: 10 tasks
+(0.0%)	Epoch: 0 	 Batch: 0 	 Objective: 11.81 	  Acc: 0.0942	 Empiric-Loss: 2.309	 Task-Comp. 8.64	 Meta-Comp.: 0.8591
+(0.3%)	Epoch: 0 	 Batch: 50 	 Objective: 5.012 	  Acc: 0.843	 Empiric-Loss: 0.517	 Task-Comp. 3.638	 Meta-Comp.: 0.8568
+(0.7%)	Epoch: 0 	 Batch: 100 	 Objective: 3.312 	  Acc: 0.837	 Empiric-Loss: 0.539	 Task-Comp. 1.917	 Meta-Comp.: 0.8552
+(1.0%)	Epoch: 0 	 Batch: 150 	 Objective: 2.553 	  Acc: 0.839	 Empiric-Loss: 0.5305	 Task-Comp. 1.168	 Meta-Comp.: 0.8542
+(1.4%)	Epoch: 0 	 Batch: 200 	 Objective: 2.028 	  Acc: 0.854	 Empiric-Loss: 0.4948	 Task-Comp. 0.6794	 Meta-Comp.: 0.8537
+(1.7%)	Epoch: 0 	 Batch: 250 	 Objective: 1.702 	  Acc: 0.864	 Empiric-Loss: 0.4456	 Task-Comp. 0.4031	 Meta-Comp.: 0.8535
+(2.0%)	Epoch: 1 	 Batch: 0 	 Objective: 1.643 	  Acc: 0.856	 Empiric-Loss: 0.4579	 Task-Comp. 0.3321	 Meta-Comp.: 0.8534
+(2.3%)	Epoch: 1 	 Batch: 50 	 Objective: 1.502 	  Acc: 0.888	 Empiric-Loss: 0.3523	 Task-Comp. 0.2966	 Meta-Comp.: 0.8532
+(2.7%)	Epoch: 1 	 Batch: 100 	 Objective: 1.481 	  Acc: 0.898	 Empiric-Loss: 0.3419	 Task-Comp. 0.2863	 Meta-Comp.: 0.8529
+(3.0%)	Epoch: 1 	 Batch: 150 	 Objective: 1.388 	  Acc: 0.914	 Empiric-Loss: 0.2571	 Task-Comp. 0.2781	 Meta-Comp.: 0.8525
+(3.4%)	Epoch: 1 	 Batch: 200 	 Objective: 1.386 	  Acc: 0.919	 Empiric-Loss: 0.2574	 Task-Comp. 0.277	 Meta-Comp.: 0.852
+(3.7%)	Epoch: 1 	 Batch: 250 	 Objective: 1.35 	  Acc: 0.931	 Empiric-Loss: 0.2238	 Task-Comp. 0.2747	 Meta-Comp.: 0.8516
+(4.0%)	Epoch: 2 	 Batch: 0 	 Objective: 1.4 	  Acc: 0.911	 Empiric-Loss: 0.2697	 Task-Comp. 0.2792	 Meta-Comp.: 0.8512
+(4.3%)	Epoch: 2 	 Batch: 50 	 Objective: 1.333 	  Acc: 0.934	 Empiric-Loss: 0.2114	 Task-Comp. 0.2707	 Meta-Comp.: 0.8507
+(4.7%)	Epoch: 2 	 Batch: 100 	 Objective: 1.349 	  Acc: 0.929	 Empiric-Loss: 0.2296	 Task-Comp. 0.2688	 Meta-Comp.: 0.8501
+(5.0%)	Epoch: 2 	 Batch: 150 	 Objective: 1.303 	  Acc: 0.944	 Empiric-Loss: 0.185	 Task-Comp. 0.2682	 Meta-Comp.: 0.8496
+(5.4%)	Epoch: 2 	 Batch: 200 	 Objective: 1.3 	  Acc: 0.945	 Empiric-Loss: 0.1821	 Task-Comp. 0.2691	 Meta-Comp.: 0.8491
+(5.7%)	Epoch: 2 	 Batch: 250 	 Objective: 1.269 	  Acc: 0.95	 Empiric-Loss: 0.153	 Task-Comp. 0.2672	 Meta-Comp.: 0.8485
+(6.0%)	Epoch: 3 	 Batch: 0 	 Objective: 1.331 	  Acc: 0.929	 Empiric-Loss: 0.2123	 Task-Comp. 0.2709	 Meta-Comp.: 0.848
+(6.3%)	Epoch: 3 	 Batch: 50 	 Objective: 1.276 	  Acc: 0.94	 Empiric-Loss: 0.1683	 Task-Comp. 0.2601	 Meta-Comp.: 0.8474
+(6.7%)	Epoch: 3 	 Batch: 100 	 Objective: 1.276 	  Acc: 0.946	 Empiric-Loss: 0.1643	 Task-Comp. 0.2647	 Meta-Comp.: 0.8468
+(7.0%)	Epoch: 3 	 Batch: 150 	 Objective: 1.252 	  Acc: 0.954	 Empiric-Loss: 0.144	 Task-Comp. 0.2614	 Meta-Comp.: 0.8461
+(7.4%)	Epoch: 3 	 Batch: 200 	 Objective: 1.235 	  Acc: 0.954	 Empiric-Loss: 0.1294	 Task-Comp. 0.2605	 Meta-Comp.: 0.8455
+(7.7%)	Epoch: 3 	 Batch: 250 	 Objective: 1.224 	  Acc: 0.966	 Empiric-Loss: 0.1193	 Task-Comp. 0.2603	 Meta-Comp.: 0.8449
+(8.0%)	Epoch: 4 	 Batch: 0 	 Objective: 1.239 	  Acc: 0.959	 Empiric-Loss: 0.1315	 Task-Comp. 0.2636	 Meta-Comp.: 0.8443
+(8.3%)	Epoch: 4 	 Batch: 50 	 Objective: 1.228 	  Acc: 0.959	 Empiric-Loss: 0.1279	 Task-Comp. 0.2563	 Meta-Comp.: 0.8436
+(8.7%)	Epoch: 4 	 Batch: 100 	 Objective: 1.224 	  Acc: 0.962	 Empiric-Loss: 0.1254	 Task-Comp. 0.2553	 Meta-Comp.: 0.8429
+(9.0%)	Epoch: 4 	 Batch: 150 	 Objective: 1.205 	  Acc: 0.969	 Empiric-Loss: 0.1076	 Task-Comp. 0.2555	 Meta-Comp.: 0.8422
+(9.4%)	Epoch: 4 	 Batch: 200 	 Objective: 1.216 	  Acc: 0.964	 Empiric-Loss: 0.1221	 Task-Comp. 0.2521	 Meta-Comp.: 0.8415
+(9.7%)	Epoch: 4 	 Batch: 250 	 Objective: 1.214 	  Acc: 0.96	 Empiric-Loss: 0.1193	 Task-Comp. 0.2535	 Meta-Comp.: 0.8408
+(10.0%)	Epoch: 5 	 Batch: 0 	 Objective: 1.238 	  Acc: 0.954	 Empiric-Loss: 0.1415	 Task-Comp. 0.2563	 Meta-Comp.: 0.8401
+(10.3%)	Epoch: 5 	 Batch: 50 	 Objective: 1.199 	  Acc: 0.967	 Empiric-Loss: 0.1102	 Task-Comp. 0.2495	 Meta-Comp.: 0.8394
+(10.7%)	Epoch: 5 	 Batch: 100 	 Objective: 1.208 	  Acc: 0.959	 Empiric-Loss: 0.1227	 Task-Comp. 0.2464	 Meta-Comp.: 0.8386
+(11.0%)	Epoch: 5 	 Batch: 150 	 Objective: 1.186 	  Acc: 0.963	 Empiric-Loss: 0.1033	 Task-Comp. 0.2446	 Meta-Comp.: 0.8379
+(11.4%)	Epoch: 5 	 Batch: 200 	 Objective: 1.165 	  Acc: 0.972	 Empiric-Loss: 0.08228	 Task-Comp. 0.2457	 Meta-Comp.: 0.8371
+(11.7%)	Epoch: 5 	 Batch: 250 	 Objective: 1.179 	  Acc: 0.964	 Empiric-Loss: 0.1015	 Task-Comp. 0.2411	 Meta-Comp.: 0.8363
+(12.0%)	Epoch: 6 	 Batch: 0 	 Objective: 1.19 	  Acc: 0.966	 Empiric-Loss: 0.1065	 Task-Comp. 0.2482	 Meta-Comp.: 0.8356
+(12.3%)	Epoch: 6 	 Batch: 50 	 Objective: 1.166 	  Acc: 0.968	 Empiric-Loss: 0.08839	 Task-Comp. 0.2428	 Meta-Comp.: 0.8348
+(12.7%)	Epoch: 6 	 Batch: 100 	 Objective: 1.167 	  Acc: 0.965	 Empiric-Loss: 0.09546	 Task-Comp. 0.2375	 Meta-Comp.: 0.834
+(13.0%)	Epoch: 6 	 Batch: 150 	 Objective: 1.145 	  Acc: 0.975	 Empiric-Loss: 0.07535	 Task-Comp. 0.2361	 Meta-Comp.: 0.8332
+(13.4%)	Epoch: 6 	 Batch: 200 	 Objective: 1.143 	  Acc: 0.975	 Empiric-Loss: 0.0776	 Task-Comp. 0.2327	 Meta-Comp.: 0.8324
+(13.7%)	Epoch: 6 	 Batch: 250 	 Objective: 1.137 	  Acc: 0.977	 Empiric-Loss: 0.07399	 Task-Comp. 0.2317	 Meta-Comp.: 0.8315
+(14.0%)	Epoch: 7 	 Batch: 0 	 Objective: 1.172 	  Acc: 0.967	 Empiric-Loss: 0.1008	 Task-Comp. 0.2407	 Meta-Comp.: 0.8308
+(14.3%)	Epoch: 7 	 Batch: 50 	 Objective: 1.145 	  Acc: 0.971	 Empiric-Loss: 0.08321	 Task-Comp. 0.232	 Meta-Comp.: 0.8299
+(14.7%)	Epoch: 7 	 Batch: 100 	 Objective: 1.14 	  Acc: 0.973	 Empiric-Loss: 0.08278	 Task-Comp. 0.2278	 Meta-Comp.: 0.829
+(15.0%)	Epoch: 7 	 Batch: 150 	 Objective: 1.155 	  Acc: 0.968	 Empiric-Loss: 0.09943	 Task-Comp. 0.2272	 Meta-Comp.: 0.8282
+(15.4%)	Epoch: 7 	 Batch: 200 	 Objective: 1.142 	  Acc: 0.978	 Empiric-Loss: 0.0891	 Task-Comp. 0.2255	 Meta-Comp.: 0.8273
+(15.7%)	Epoch: 7 	 Batch: 250 	 Objective: 1.116 	  Acc: 0.977	 Empiric-Loss: 0.06602	 Task-Comp. 0.2236	 Meta-Comp.: 0.8264
+(16.0%)	Epoch: 8 	 Batch: 0 	 Objective: 1.129 	  Acc: 0.976	 Empiric-Loss: 0.07559	 Task-Comp. 0.2277	 Meta-Comp.: 0.8256
+(16.3%)	Epoch: 8 	 Batch: 50 	 Objective: 1.108 	  Acc: 0.979	 Empiric-Loss: 0.05845	 Task-Comp. 0.2248	 Meta-Comp.: 0.8247
+(16.7%)	Epoch: 8 	 Batch: 100 	 Objective: 1.124 	  Acc: 0.978	 Empiric-Loss: 0.07667	 Task-Comp. 0.224	 Meta-Comp.: 0.8237
+(17.0%)	Epoch: 8 	 Batch: 150 	 Objective: 1.123 	  Acc: 0.975	 Empiric-Loss: 0.07945	 Task-Comp. 0.2204	 Meta-Comp.: 0.8228
+(17.4%)	Epoch: 8 	 Batch: 200 	 Objective: 1.101 	  Acc: 0.979	 Empiric-Loss: 0.0607	 Task-Comp. 0.2183	 Meta-Comp.: 0.8218
+(17.7%)	Epoch: 8 	 Batch: 250 	 Objective: 1.088 	  Acc: 0.981	 Empiric-Loss: 0.05144	 Task-Comp. 0.2152	 Meta-Comp.: 0.8209
+(18.0%)	Epoch: 9 	 Batch: 0 	 Objective: 1.124 	  Acc: 0.974	 Empiric-Loss: 0.08109	 Task-Comp. 0.2233	 Meta-Comp.: 0.82
+(18.3%)	Epoch: 9 	 Batch: 50 	 Objective: 1.092 	  Acc: 0.981	 Empiric-Loss: 0.05622	 Task-Comp. 0.217	 Meta-Comp.: 0.8189
+(18.7%)	Epoch: 9 	 Batch: 100 	 Objective: 1.114 	  Acc: 0.973	 Empiric-Loss: 0.08103	 Task-Comp. 0.2155	 Meta-Comp.: 0.818
+(19.0%)	Epoch: 9 	 Batch: 150 	 Objective: 1.093 	  Acc: 0.978	 Empiric-Loss: 0.06625	 Task-Comp. 0.2099	 Meta-Comp.: 0.817
+(19.4%)	Epoch: 9 	 Batch: 200 	 Objective: 1.104 	  Acc: 0.972	 Empiric-Loss: 0.07781	 Task-Comp. 0.2106	 Meta-Comp.: 0.8159
+(19.7%)	Epoch: 9 	 Batch: 250 	 Objective: 1.096 	  Acc: 0.975	 Empiric-Loss: 0.0734	 Task-Comp. 0.2077	 Meta-Comp.: 0.8149
+(20.0%)	Epoch: 10 	 Batch: 0 	 Objective: 1.093 	  Acc: 0.982	 Empiric-Loss: 0.06322	 Task-Comp. 0.216	 Meta-Comp.: 0.814
+(20.3%)	Epoch: 10 	 Batch: 50 	 Objective: 1.075 	  Acc: 0.982	 Empiric-Loss: 0.05568	 Task-Comp. 0.2063	 Meta-Comp.: 0.8129
+(20.7%)	Epoch: 10 	 Batch: 100 	 Objective: 1.056 	  Acc: 0.983	 Empiric-Loss: 0.04711	 Task-Comp. 0.1967	 Meta-Comp.: 0.8119
+(21.0%)	Epoch: 10 	 Batch: 150 	 Objective: 1.088 	  Acc: 0.975	 Empiric-Loss: 0.07622	 Task-Comp. 0.2008	 Meta-Comp.: 0.8108
+(21.4%)	Epoch: 10 	 Batch: 200 	 Objective: 1.062 	  Acc: 0.983	 Empiric-Loss: 0.05711	 Task-Comp. 0.1955	 Meta-Comp.: 0.8097
+(21.7%)	Epoch: 10 	 Batch: 250 	 Objective: 1.061 	  Acc: 0.98	 Empiric-Loss: 0.0565	 Task-Comp. 0.1961	 Meta-Comp.: 0.8087
+(22.0%)	Epoch: 11 	 Batch: 0 	 Objective: 1.064 	  Acc: 0.98	 Empiric-Loss: 0.05497	 Task-Comp. 0.2009	 Meta-Comp.: 0.8077
+(22.3%)	Epoch: 11 	 Batch: 50 	 Objective: 1.058 	  Acc: 0.981	 Empiric-Loss: 0.0518	 Task-Comp. 0.1996	 Meta-Comp.: 0.8065
+(22.7%)	Epoch: 11 	 Batch: 100 	 Objective: 1.062 	  Acc: 0.98	 Empiric-Loss: 0.06375	 Task-Comp. 0.1931	 Meta-Comp.: 0.8055
+(23.0%)	Epoch: 11 	 Batch: 150 	 Objective: 1.052 	  Acc: 0.98	 Empiric-Loss: 0.05616	 Task-Comp. 0.1912	 Meta-Comp.: 0.8045
+(23.4%)	Epoch: 11 	 Batch: 200 	 Objective: 1.049 	  Acc: 0.979	 Empiric-Loss: 0.05755	 Task-Comp. 0.1886	 Meta-Comp.: 0.8034
+(23.7%)	Epoch: 11 	 Batch: 250 	 Objective: 1.02 	  Acc: 0.987	 Empiric-Loss: 0.04005	 Task-Comp. 0.1778	 Meta-Comp.: 0.8023
+(24.0%)	Epoch: 12 	 Batch: 0 	 Objective: 1.078 	  Acc: 0.968	 Empiric-Loss: 0.08054	 Task-Comp. 0.1964	 Meta-Comp.: 0.8014
+(24.3%)	Epoch: 12 	 Batch: 50 	 Objective: 1.005 	  Acc: 0.985	 Empiric-Loss: 0.03928	 Task-Comp. 0.1654	 Meta-Comp.: 0.8003
+(24.7%)	Epoch: 12 	 Batch: 100 	 Objective: 1.024 	  Acc: 0.982	 Empiric-Loss: 0.04574	 Task-Comp. 0.1786	 Meta-Comp.: 0.7992
+(25.0%)	Epoch: 12 	 Batch: 150 	 Objective: 1.036 	  Acc: 0.982	 Empiric-Loss: 0.05581	 Task-Comp. 0.1815	 Meta-Comp.: 0.7982
+(25.4%)	Epoch: 12 	 Batch: 200 	 Objective: 1.024 	  Acc: 0.983	 Empiric-Loss: 0.05138	 Task-Comp. 0.1758	 Meta-Comp.: 0.7971
+(25.7%)	Epoch: 12 	 Batch: 250 	 Objective: 1.033 	  Acc: 0.977	 Empiric-Loss: 0.0585	 Task-Comp. 0.178	 Meta-Comp.: 0.796
+(26.0%)	Epoch: 13 	 Batch: 0 	 Objective: 1.029 	  Acc: 0.981	 Empiric-Loss: 0.04998	 Task-Comp. 0.1841	 Meta-Comp.: 0.7951
+(26.3%)	Epoch: 13 	 Batch: 50 	 Objective: 0.9992 	  Acc: 0.987	 Empiric-Loss: 0.04021	 Task-Comp. 0.165	 Meta-Comp.: 0.794
+(26.7%)	Epoch: 13 	 Batch: 100 	 Objective: 1.019 	  Acc: 0.984	 Empiric-Loss: 0.06036	 Task-Comp. 0.1658	 Meta-Comp.: 0.793
+(27.0%)	Epoch: 13 	 Batch: 150 	 Objective: 0.9856 	  Acc: 0.988	 Empiric-Loss: 0.0369	 Task-Comp. 0.1568	 Meta-Comp.: 0.7919
+(27.4%)	Epoch: 13 	 Batch: 200 	 Objective: 0.9895 	  Acc: 0.989	 Empiric-Loss: 0.04013	 Task-Comp. 0.1585	 Meta-Comp.: 0.7909
+(27.7%)	Epoch: 13 	 Batch: 250 	 Objective: 0.9916 	  Acc: 0.986	 Empiric-Loss: 0.04262	 Task-Comp. 0.1591	 Meta-Comp.: 0.7899
+(28.0%)	Epoch: 14 	 Batch: 0 	 Objective: 0.9946 	  Acc: 0.984	 Empiric-Loss: 0.04412	 Task-Comp. 0.1615	 Meta-Comp.: 0.789
+(28.3%)	Epoch: 14 	 Batch: 50 	 Objective: 0.9873 	  Acc: 0.984	 Empiric-Loss: 0.04259	 Task-Comp. 0.1568	 Meta-Comp.: 0.7879
+(28.7%)	Epoch: 14 	 Batch: 100 	 Objective: 0.9929 	  Acc: 0.983	 Empiric-Loss: 0.04602	 Task-Comp. 0.16	 Meta-Comp.: 0.787
+(29.0%)	Epoch: 14 	 Batch: 150 	 Objective: 0.9622 	  Acc: 0.989	 Empiric-Loss: 0.03254	 Task-Comp. 0.1437	 Meta-Comp.: 0.786
+(29.4%)	Epoch: 14 	 Batch: 200 	 Objective: 0.9622 	  Acc: 0.991	 Empiric-Loss: 0.03032	 Task-Comp. 0.1469	 Meta-Comp.: 0.785
+(29.7%)	Epoch: 14 	 Batch: 250 	 Objective: 0.9749 	  Acc: 0.987	 Empiric-Loss: 0.03778	 Task-Comp. 0.1531	 Meta-Comp.: 0.784
+(30.0%)	Epoch: 15 	 Batch: 0 	 Objective: 0.9969 	  Acc: 0.979	 Empiric-Loss: 0.05408	 Task-Comp. 0.1597	 Meta-Comp.: 0.7832
+(30.3%)	Epoch: 15 	 Batch: 50 	 Objective: 0.9656 	  Acc: 0.986	 Empiric-Loss: 0.04149	 Task-Comp. 0.1419	 Meta-Comp.: 0.7822
+(30.7%)	Epoch: 15 	 Batch: 100 	 Objective: 0.9654 	  Acc: 0.987	 Empiric-Loss: 0.04369	 Task-Comp. 0.1405	 Meta-Comp.: 0.7812
+(31.0%)	Epoch: 15 	 Batch: 150 	 Objective: 0.9695 	  Acc: 0.987	 Empiric-Loss: 0.04521	 Task-Comp. 0.144	 Meta-Comp.: 0.7803
+(31.4%)	Epoch: 15 	 Batch: 200 	 Objective: 0.9516 	  Acc: 0.987	 Empiric-Loss: 0.03481	 Task-Comp. 0.1374	 Meta-Comp.: 0.7794
+(31.7%)	Epoch: 15 	 Batch: 250 	 Objective: 0.9471 	  Acc: 0.988	 Empiric-Loss: 0.03287	 Task-Comp. 0.1358	 Meta-Comp.: 0.7784
+(32.0%)	Epoch: 16 	 Batch: 0 	 Objective: 0.9454 	  Acc: 0.989	 Empiric-Loss: 0.03216	 Task-Comp. 0.1355	 Meta-Comp.: 0.7777
+(32.3%)	Epoch: 16 	 Batch: 50 	 Objective: 0.9269 	  Acc: 0.991	 Empiric-Loss: 0.0249	 Task-Comp. 0.1253	 Meta-Comp.: 0.7767
+(32.7%)	Epoch: 16 	 Batch: 100 	 Objective: 0.9364 	  Acc: 0.988	 Empiric-Loss: 0.03138	 Task-Comp. 0.1291	 Meta-Comp.: 0.7758
+(33.0%)	Epoch: 16 	 Batch: 150 	 Objective: 0.9488 	  Acc: 0.988	 Empiric-Loss: 0.04257	 Task-Comp. 0.1313	 Meta-Comp.: 0.7749
+(33.4%)	Epoch: 16 	 Batch: 200 	 Objective: 0.9501 	  Acc: 0.989	 Empiric-Loss: 0.04373	 Task-Comp. 0.1323	 Meta-Comp.: 0.7741
+(33.7%)	Epoch: 16 	 Batch: 250 	 Objective: 0.9257 	  Acc: 0.99	 Empiric-Loss: 0.02816	 Task-Comp. 0.1243	 Meta-Comp.: 0.7732
+(34.0%)	Epoch: 17 	 Batch: 0 	 Objective: 0.9539 	  Acc: 0.981	 Empiric-Loss: 0.04623	 Task-Comp. 0.1353	 Meta-Comp.: 0.7724
+(34.3%)	Epoch: 17 	 Batch: 50 	 Objective: 0.929 	  Acc: 0.987	 Empiric-Loss: 0.03487	 Task-Comp. 0.1226	 Meta-Comp.: 0.7715
+(34.7%)	Epoch: 17 	 Batch: 100 	 Objective: 0.9314 	  Acc: 0.986	 Empiric-Loss: 0.03654	 Task-Comp. 0.1242	 Meta-Comp.: 0.7707
+(35.0%)	Epoch: 17 	 Batch: 150 	 Objective: 0.9281 	  Acc: 0.988	 Empiric-Loss: 0.03787	 Task-Comp. 0.1204	 Meta-Comp.: 0.7698
+(35.4%)	Epoch: 17 	 Batch: 200 	 Objective: 0.9121 	  Acc: 0.991	 Empiric-Loss: 0.02747	 Task-Comp. 0.1156	 Meta-Comp.: 0.769
+(35.7%)	Epoch: 17 	 Batch: 250 	 Objective: 0.94 	  Acc: 0.983	 Empiric-Loss: 0.04401	 Task-Comp. 0.1279	 Meta-Comp.: 0.7681
+(36.0%)	Epoch: 18 	 Batch: 0 	 Objective: 0.91 	  Acc: 0.989	 Empiric-Loss: 0.02643	 Task-Comp. 0.1162	 Meta-Comp.: 0.7674
+(36.3%)	Epoch: 18 	 Batch: 50 	 Objective: 0.9054 	  Acc: 0.99	 Empiric-Loss: 0.02691	 Task-Comp. 0.1119	 Meta-Comp.: 0.7666
+(36.7%)	Epoch: 18 	 Batch: 100 	 Objective: 0.9057 	  Acc: 0.993	 Empiric-Loss: 0.02612	 Task-Comp. 0.1139	 Meta-Comp.: 0.7658
+(37.0%)	Epoch: 18 	 Batch: 150 	 Objective: 0.9188 	  Acc: 0.99	 Empiric-Loss: 0.03279	 Task-Comp. 0.1211	 Meta-Comp.: 0.765
+(37.4%)	Epoch: 18 	 Batch: 200 	 Objective: 0.9282 	  Acc: 0.984	 Empiric-Loss: 0.04532	 Task-Comp. 0.1188	 Meta-Comp.: 0.7641
+(37.7%)	Epoch: 18 	 Batch: 250 	 Objective: 0.8982 	  Acc: 0.991	 Empiric-Loss: 0.02667	 Task-Comp. 0.1082	 Meta-Comp.: 0.7634
+(38.0%)	Epoch: 19 	 Batch: 0 	 Objective: 0.9075 	  Acc: 0.992	 Empiric-Loss: 0.02558	 Task-Comp. 0.1193	 Meta-Comp.: 0.7627
+(38.3%)	Epoch: 19 	 Batch: 50 	 Objective: 0.908 	  Acc: 0.991	 Empiric-Loss: 0.02786	 Task-Comp. 0.1184	 Meta-Comp.: 0.7618
+(38.7%)	Epoch: 19 	 Batch: 100 	 Objective: 0.9067 	  Acc: 0.988	 Empiric-Loss: 0.03324	 Task-Comp. 0.1124	 Meta-Comp.: 0.7611
+(39.0%)	Epoch: 19 	 Batch: 150 	 Objective: 0.9043 	  Acc: 0.989	 Empiric-Loss: 0.03203	 Task-Comp. 0.112	 Meta-Comp.: 0.7603
+(39.4%)	Epoch: 19 	 Batch: 200 	 Objective: 0.8962 	  Acc: 0.991	 Empiric-Loss: 0.03134	 Task-Comp. 0.1054	 Meta-Comp.: 0.7595
+(39.7%)	Epoch: 19 	 Batch: 250 	 Objective: 0.8986 	  Acc: 0.989	 Empiric-Loss: 0.03172	 Task-Comp. 0.1081	 Meta-Comp.: 0.7588
+(40.0%)	Epoch: 20 	 Batch: 0 	 Objective: 0.9089 	  Acc: 0.986	 Empiric-Loss: 0.03964	 Task-Comp. 0.1111	 Meta-Comp.: 0.7582
+(40.3%)	Epoch: 20 	 Batch: 50 	 Objective: 0.8969 	  Acc: 0.989	 Empiric-Loss: 0.0298	 Task-Comp. 0.1098	 Meta-Comp.: 0.7573
+(40.7%)	Epoch: 20 	 Batch: 100 	 Objective: 0.8697 	  Acc: 0.994	 Empiric-Loss: 0.01977	 Task-Comp. 0.09325	 Meta-Comp.: 0.7566
+(41.0%)	Epoch: 20 	 Batch: 150 	 Objective: 0.9012 	  Acc: 0.985	 Empiric-Loss: 0.03538	 Task-Comp. 0.1099	 Meta-Comp.: 0.7559
+(41.4%)	Epoch: 20 	 Batch: 200 	 Objective: 0.8972 	  Acc: 0.991	 Empiric-Loss: 0.03384	 Task-Comp. 0.1083	 Meta-Comp.: 0.7551
+(41.7%)	Epoch: 20 	 Batch: 250 	 Objective: 0.859 	  Acc: 0.995	 Empiric-Loss: 0.01582	 Task-Comp. 0.08869	 Meta-Comp.: 0.7545
+(42.0%)	Epoch: 21 	 Batch: 0 	 Objective: 0.875 	  Acc: 0.993	 Empiric-Loss: 0.02266	 Task-Comp. 0.09852	 Meta-Comp.: 0.7538
+(42.3%)	Epoch: 21 	 Batch: 50 	 Objective: 0.8729 	  Acc: 0.992	 Empiric-Loss: 0.02614	 Task-Comp. 0.09363	 Meta-Comp.: 0.7531
+(42.7%)	Epoch: 21 	 Batch: 100 	 Objective: 0.8648 	  Acc: 0.993	 Empiric-Loss: 0.01929	 Task-Comp. 0.09308	 Meta-Comp.: 0.7524
+(43.0%)	Epoch: 21 	 Batch: 150 	 Objective: 0.8727 	  Acc: 0.993	 Empiric-Loss: 0.0201	 Task-Comp. 0.1009	 Meta-Comp.: 0.7517
+(43.4%)	Epoch: 21 	 Batch: 200 	 Objective: 0.8769 	  Acc: 0.991	 Empiric-Loss: 0.02992	 Task-Comp. 0.09592	 Meta-Comp.: 0.751
+(43.7%)	Epoch: 21 	 Batch: 250 	 Objective: 0.8735 	  Acc: 0.992	 Empiric-Loss: 0.02866	 Task-Comp. 0.09445	 Meta-Comp.: 0.7504
+(44.0%)	Epoch: 22 	 Batch: 0 	 Objective: 0.886 	  Acc: 0.992	 Empiric-Loss: 0.03283	 Task-Comp. 0.1034	 Meta-Comp.: 0.7497
+(44.3%)	Epoch: 22 	 Batch: 50 	 Objective: 0.8847 	  Acc: 0.99	 Empiric-Loss: 0.03409	 Task-Comp. 0.1016	 Meta-Comp.: 0.749
+(44.7%)	Epoch: 22 	 Batch: 100 	 Objective: 0.8606 	  Acc: 0.991	 Empiric-Loss: 0.02311	 Task-Comp. 0.08915	 Meta-Comp.: 0.7484
+(45.0%)	Epoch: 22 	 Batch: 150 	 Objective: 0.8742 	  Acc: 0.991	 Empiric-Loss: 0.03174	 Task-Comp. 0.09476	 Meta-Comp.: 0.7477
+(45.4%)	Epoch: 22 	 Batch: 200 	 Objective: 0.87 	  Acc: 0.99	 Empiric-Loss: 0.02551	 Task-Comp. 0.09746	 Meta-Comp.: 0.747
+(45.7%)	Epoch: 22 	 Batch: 250 	 Objective: 0.8596 	  Acc: 0.994	 Empiric-Loss: 0.02077	 Task-Comp. 0.09251	 Meta-Comp.: 0.7464
+(46.0%)	Epoch: 23 	 Batch: 0 	 Objective: 0.8648 	  Acc: 0.991	 Empiric-Loss: 0.02484	 Task-Comp. 0.09415	 Meta-Comp.: 0.7458
+(46.3%)	Epoch: 23 	 Batch: 50 	 Objective: 0.8633 	  Acc: 0.99	 Empiric-Loss: 0.02383	 Task-Comp. 0.09444	 Meta-Comp.: 0.7451
+(46.7%)	Epoch: 23 	 Batch: 100 	 Objective: 0.8746 	  Acc: 0.99	 Empiric-Loss: 0.03111	 Task-Comp. 0.09904	 Meta-Comp.: 0.7445
+(47.0%)	Epoch: 23 	 Batch: 150 	 Objective: 0.8576 	  Acc: 0.99	 Empiric-Loss: 0.02399	 Task-Comp. 0.08975	 Meta-Comp.: 0.7438
+(47.4%)	Epoch: 23 	 Batch: 200 	 Objective: 0.837 	  Acc: 0.995	 Empiric-Loss: 0.01114	 Task-Comp. 0.08264	 Meta-Comp.: 0.7432
+(47.7%)	Epoch: 23 	 Batch: 250 	 Objective: 0.8762 	  Acc: 0.986	 Empiric-Loss: 0.03614	 Task-Comp. 0.09751	 Meta-Comp.: 0.7426
+(48.0%)	Epoch: 24 	 Batch: 0 	 Objective: 0.889 	  Acc: 0.988	 Empiric-Loss: 0.04123	 Task-Comp. 0.1058	 Meta-Comp.: 0.742
+(48.3%)	Epoch: 24 	 Batch: 50 	 Objective: 0.8889 	  Acc: 0.991	 Empiric-Loss: 0.02723	 Task-Comp. 0.1205	 Meta-Comp.: 0.7412
+(48.7%)	Epoch: 24 	 Batch: 100 	 Objective: 0.8522 	  Acc: 0.992	 Empiric-Loss: 0.02308	 Task-Comp. 0.08845	 Meta-Comp.: 0.7407
+(49.0%)	Epoch: 24 	 Batch: 150 	 Objective: 0.8477 	  Acc: 0.994	 Empiric-Loss: 0.02171	 Task-Comp. 0.08591	 Meta-Comp.: 0.7401
+(49.4%)	Epoch: 24 	 Batch: 200 	 Objective: 0.8414 	  Acc: 0.991	 Empiric-Loss: 0.02367	 Task-Comp. 0.07823	 Meta-Comp.: 0.7395
+(49.7%)	Epoch: 24 	 Batch: 250 	 Objective: 0.8635 	  Acc: 0.99	 Empiric-Loss: 0.02979	 Task-Comp. 0.09483	 Meta-Comp.: 0.7389
+(50.0%)	Epoch: 25 	 Batch: 0 	 Objective: 0.8445 	  Acc: 0.993	 Empiric-Loss: 0.02092	 Task-Comp. 0.08524	 Meta-Comp.: 0.7384
+(50.3%)	Epoch: 25 	 Batch: 50 	 Objective: 0.8478 	  Acc: 0.993	 Empiric-Loss: 0.02218	 Task-Comp. 0.08791	 Meta-Comp.: 0.7377
+(50.7%)	Epoch: 25 	 Batch: 100 	 Objective: 0.8428 	  Acc: 0.993	 Empiric-Loss: 0.02224	 Task-Comp. 0.08338	 Meta-Comp.: 0.7371
+(51.0%)	Epoch: 25 	 Batch: 150 	 Objective: 0.8299 	  Acc: 0.995	 Empiric-Loss: 0.01784	 Task-Comp. 0.07547	 Meta-Comp.: 0.7366
+(51.4%)	Epoch: 25 	 Batch: 200 	 Objective: 0.8452 	  Acc: 0.993	 Empiric-Loss: 0.02903	 Task-Comp. 0.08019	 Meta-Comp.: 0.736
+(51.7%)	Epoch: 25 	 Batch: 250 	 Objective: 0.8477 	  Acc: 0.991	 Empiric-Loss: 0.02291	 Task-Comp. 0.08938	 Meta-Comp.: 0.7354
+(52.0%)	Epoch: 26 	 Batch: 0 	 Objective: 0.8646 	  Acc: 0.988	 Empiric-Loss: 0.03646	 Task-Comp. 0.09317	 Meta-Comp.: 0.7349
+(52.3%)	Epoch: 26 	 Batch: 50 	 Objective: 0.8498 	  Acc: 0.992	 Empiric-Loss: 0.02442	 Task-Comp. 0.09114	 Meta-Comp.: 0.7343
+(52.7%)	Epoch: 26 	 Batch: 100 	 Objective: 0.8374 	  Acc: 0.994	 Empiric-Loss: 0.01804	 Task-Comp. 0.08563	 Meta-Comp.: 0.7337
+(53.0%)	Epoch: 26 	 Batch: 150 	 Objective: 0.8509 	  Acc: 0.991	 Empiric-Loss: 0.02827	 Task-Comp. 0.08953	 Meta-Comp.: 0.7332
+(53.4%)	Epoch: 26 	 Batch: 200 	 Objective: 0.8451 	  Acc: 0.991	 Empiric-Loss: 0.02693	 Task-Comp. 0.08557	 Meta-Comp.: 0.7326
+(53.7%)	Epoch: 26 	 Batch: 250 	 Objective: 0.8383 	  Acc: 0.991	 Empiric-Loss: 0.02762	 Task-Comp. 0.07865	 Meta-Comp.: 0.7321
+(54.0%)	Epoch: 27 	 Batch: 0 	 Objective: 0.8468 	  Acc: 0.991	 Empiric-Loss: 0.03156	 Task-Comp. 0.08363	 Meta-Comp.: 0.7316
+(54.3%)	Epoch: 27 	 Batch: 50 	 Objective: 0.8306 	  Acc: 0.995	 Empiric-Loss: 0.02218	 Task-Comp. 0.07737	 Meta-Comp.: 0.731
+(54.7%)	Epoch: 27 	 Batch: 100 	 Objective: 0.8156 	  Acc: 0.996	 Empiric-Loss: 0.01147	 Task-Comp. 0.07362	 Meta-Comp.: 0.7305
+(55.0%)	Epoch: 27 	 Batch: 150 	 Objective: 0.8333 	  Acc: 0.991	 Empiric-Loss: 0.02446	 Task-Comp. 0.07892	 Meta-Comp.: 0.73
+(55.4%)	Epoch: 27 	 Batch: 200 	 Objective: 0.824 	  Acc: 0.992	 Empiric-Loss: 0.0186	 Task-Comp. 0.07599	 Meta-Comp.: 0.7294
+(55.7%)	Epoch: 27 	 Batch: 250 	 Objective: 0.8591 	  Acc: 0.989	 Empiric-Loss: 0.04131	 Task-Comp. 0.08891	 Meta-Comp.: 0.7289
+(56.0%)	Epoch: 28 	 Batch: 0 	 Objective: 0.8236 	  Acc: 0.995	 Empiric-Loss: 0.01491	 Task-Comp. 0.08028	 Meta-Comp.: 0.7284
+(56.3%)	Epoch: 28 	 Batch: 50 	 Objective: 0.8156 	  Acc: 0.995	 Empiric-Loss: 0.01449	 Task-Comp. 0.07322	 Meta-Comp.: 0.7279
+(56.7%)	Epoch: 28 	 Batch: 100 	 Objective: 0.8173 	  Acc: 0.996	 Empiric-Loss: 0.0135	 Task-Comp. 0.0764	 Meta-Comp.: 0.7274
+(57.0%)	Epoch: 28 	 Batch: 150 	 Objective: 0.8362 	  Acc: 0.992	 Empiric-Loss: 0.02201	 Task-Comp. 0.08738	 Meta-Comp.: 0.7268
+(57.4%)	Epoch: 28 	 Batch: 200 	 Objective: 0.8348 	  Acc: 0.994	 Empiric-Loss: 0.02182	 Task-Comp. 0.08673	 Meta-Comp.: 0.7263
+(57.7%)	Epoch: 28 	 Batch: 250 	 Objective: 0.8277 	  Acc: 0.992	 Empiric-Loss: 0.0204	 Task-Comp. 0.08153	 Meta-Comp.: 0.7257
+(58.0%)	Epoch: 29 	 Batch: 0 	 Objective: 0.8122 	  Acc: 0.996	 Empiric-Loss: 0.01014	 Task-Comp. 0.07678	 Meta-Comp.: 0.7253
+(58.3%)	Epoch: 29 	 Batch: 50 	 Objective: 0.8313 	  Acc: 0.99	 Empiric-Loss: 0.02583	 Task-Comp. 0.08069	 Meta-Comp.: 0.7248
+(58.7%)	Epoch: 29 	 Batch: 100 	 Objective: 0.8244 	  Acc: 0.991	 Empiric-Loss: 0.02064	 Task-Comp. 0.0795	 Meta-Comp.: 0.7243
+(59.0%)	Epoch: 29 	 Batch: 150 	 Objective: 0.8309 	  Acc: 0.991	 Empiric-Loss: 0.02478	 Task-Comp. 0.08235	 Meta-Comp.: 0.7238
+(59.4%)	Epoch: 29 	 Batch: 200 	 Objective: 0.8236 	  Acc: 0.993	 Empiric-Loss: 0.0212	 Task-Comp. 0.07913	 Meta-Comp.: 0.7233
+(59.7%)	Epoch: 29 	 Batch: 250 	 Objective: 0.8323 	  Acc: 0.991	 Empiric-Loss: 0.02896	 Task-Comp. 0.08056	 Meta-Comp.: 0.7228
+(60.0%)	Epoch: 30 	 Batch: 0 	 Objective: 0.8227 	  Acc: 0.993	 Empiric-Loss: 0.01738	 Task-Comp. 0.08296	 Meta-Comp.: 0.7223
+(60.3%)	Epoch: 30 	 Batch: 50 	 Objective: 0.8282 	  Acc: 0.992	 Empiric-Loss: 0.0179	 Task-Comp. 0.08855	 Meta-Comp.: 0.7217
+(60.7%)	Epoch: 30 	 Batch: 100 	 Objective: 0.8041 	  Acc: 0.995	 Empiric-Loss: 0.01715	 Task-Comp. 0.06563	 Meta-Comp.: 0.7214
+(61.0%)	Epoch: 30 	 Batch: 150 	 Objective: 0.8104 	  Acc: 0.994	 Empiric-Loss: 0.0194	 Task-Comp. 0.0701	 Meta-Comp.: 0.7209
+(61.4%)	Epoch: 30 	 Batch: 200 	 Objective: 0.8205 	  Acc: 0.995	 Empiric-Loss: 0.02007	 Task-Comp. 0.08003	 Meta-Comp.: 0.7204
+(61.7%)	Epoch: 30 	 Batch: 250 	 Objective: 0.8117 	  Acc: 0.995	 Empiric-Loss: 0.01561	 Task-Comp. 0.07621	 Meta-Comp.: 0.7199
+(62.0%)	Epoch: 31 	 Batch: 0 	 Objective: 0.8145 	  Acc: 0.994	 Empiric-Loss: 0.01607	 Task-Comp. 0.07897	 Meta-Comp.: 0.7195
+(62.3%)	Epoch: 31 	 Batch: 50 	 Objective: 0.8322 	  Acc: 0.994	 Empiric-Loss: 0.02358	 Task-Comp. 0.08973	 Meta-Comp.: 0.7189
+(62.7%)	Epoch: 31 	 Batch: 100 	 Objective: 0.8066 	  Acc: 0.993	 Empiric-Loss: 0.02085	 Task-Comp. 0.06719	 Meta-Comp.: 0.7185
+(63.0%)	Epoch: 31 	 Batch: 150 	 Objective: 0.8101 	  Acc: 0.995	 Empiric-Loss: 0.02226	 Task-Comp. 0.06973	 Meta-Comp.: 0.7181
+(63.4%)	Epoch: 31 	 Batch: 200 	 Objective: 0.7963 	  Acc: 0.996	 Empiric-Loss: 0.009975	 Task-Comp. 0.06869	 Meta-Comp.: 0.7176
+(63.7%)	Epoch: 31 	 Batch: 250 	 Objective: 0.7998 	  Acc: 0.997	 Empiric-Loss: 0.0133	 Task-Comp. 0.06929	 Meta-Comp.: 0.7172
+(64.0%)	Epoch: 32 	 Batch: 0 	 Objective: 0.8153 	  Acc: 0.994	 Empiric-Loss: 0.02101	 Task-Comp. 0.07748	 Meta-Comp.: 0.7168
+(64.3%)	Epoch: 32 	 Batch: 50 	 Objective: 0.8276 	  Acc: 0.995	 Empiric-Loss: 0.0191	 Task-Comp. 0.09223	 Meta-Comp.: 0.7162
+(64.7%)	Epoch: 32 	 Batch: 100 	 Objective: 0.8054 	  Acc: 0.994	 Empiric-Loss: 0.01974	 Task-Comp. 0.06975	 Meta-Comp.: 0.7159
+(65.0%)	Epoch: 32 	 Batch: 150 	 Objective: 0.7974 	  Acc: 0.996	 Empiric-Loss: 0.01468	 Task-Comp. 0.0673	 Meta-Comp.: 0.7154
+(65.4%)	Epoch: 32 	 Batch: 200 	 Objective: 0.7781 	  Acc: 0.998	 Empiric-Loss: 0.006964	 Task-Comp. 0.05606	 Meta-Comp.: 0.715
+(65.7%)	Epoch: 32 	 Batch: 250 	 Objective: 0.7903 	  Acc: 0.995	 Empiric-Loss: 0.01363	 Task-Comp. 0.06207	 Meta-Comp.: 0.7146
+(66.0%)	Epoch: 33 	 Batch: 0 	 Objective: 0.8181 	  Acc: 0.991	 Empiric-Loss: 0.02358	 Task-Comp. 0.08027	 Meta-Comp.: 0.7142
+(66.3%)	Epoch: 33 	 Batch: 50 	 Objective: 0.7942 	  Acc: 0.996	 Empiric-Loss: 0.01435	 Task-Comp. 0.06608	 Meta-Comp.: 0.7138
+(66.7%)	Epoch: 33 	 Batch: 100 	 Objective: 0.7879 	  Acc: 0.998	 Empiric-Loss: 0.007774	 Task-Comp. 0.06683	 Meta-Comp.: 0.7133
+(67.0%)	Epoch: 33 	 Batch: 150 	 Objective: 0.7994 	  Acc: 0.995	 Empiric-Loss: 0.01467	 Task-Comp. 0.07184	 Meta-Comp.: 0.7129
+(67.4%)	Epoch: 33 	 Batch: 200 	 Objective: 0.8158 	  Acc: 0.996	 Empiric-Loss: 0.02233	 Task-Comp. 0.08104	 Meta-Comp.: 0.7125
+(67.7%)	Epoch: 33 	 Batch: 250 	 Objective: 0.8184 	  Acc: 0.993	 Empiric-Loss: 0.02585	 Task-Comp. 0.08049	 Meta-Comp.: 0.712
+(68.0%)	Epoch: 34 	 Batch: 0 	 Objective: 0.8121 	  Acc: 0.991	 Empiric-Loss: 0.02528	 Task-Comp. 0.07519	 Meta-Comp.: 0.7117
+(68.3%)	Epoch: 34 	 Batch: 50 	 Objective: 0.8137 	  Acc: 0.998	 Empiric-Loss: 0.01139	 Task-Comp. 0.0912	 Meta-Comp.: 0.7111
+(68.7%)	Epoch: 34 	 Batch: 100 	 Objective: 0.787 	  Acc: 0.996	 Empiric-Loss: 0.01074	 Task-Comp. 0.06547	 Meta-Comp.: 0.7108
+(69.0%)	Epoch: 34 	 Batch: 150 	 Objective: 0.8124 	  Acc: 0.993	 Empiric-Loss: 0.02773	 Task-Comp. 0.0743	 Meta-Comp.: 0.7104
+(69.4%)	Epoch: 34 	 Batch: 200 	 Objective: 0.8045 	  Acc: 0.993	 Empiric-Loss: 0.02074	 Task-Comp. 0.07379	 Meta-Comp.: 0.71
+(69.7%)	Epoch: 34 	 Batch: 250 	 Objective: 0.808 	  Acc: 0.991	 Empiric-Loss: 0.02288	 Task-Comp. 0.07551	 Meta-Comp.: 0.7096
+(70.0%)	Epoch: 35 	 Batch: 0 	 Objective: 0.8054 	  Acc: 0.996	 Empiric-Loss: 0.02005	 Task-Comp. 0.07609	 Meta-Comp.: 0.7092
+(70.3%)	Epoch: 35 	 Batch: 50 	 Objective: 0.8088 	  Acc: 0.991	 Empiric-Loss: 0.0255	 Task-Comp. 0.07447	 Meta-Comp.: 0.7088
+(70.7%)	Epoch: 35 	 Batch: 100 	 Objective: 0.7779 	  Acc: 0.997	 Empiric-Loss: 0.01138	 Task-Comp. 0.05805	 Meta-Comp.: 0.7085
+(71.0%)	Epoch: 35 	 Batch: 150 	 Objective: 0.7859 	  Acc: 0.996	 Empiric-Loss: 0.01312	 Task-Comp. 0.0647	 Meta-Comp.: 0.7081
+(71.4%)	Epoch: 35 	 Batch: 200 	 Objective: 0.7882 	  Acc: 0.995	 Empiric-Loss: 0.01093	 Task-Comp. 0.06961	 Meta-Comp.: 0.7077
+(71.7%)	Epoch: 35 	 Batch: 250 	 Objective: 0.7822 	  Acc: 0.997	 Empiric-Loss: 0.01049	 Task-Comp. 0.06438	 Meta-Comp.: 0.7073
+(72.0%)	Epoch: 36 	 Batch: 0 	 Objective: 0.8043 	  Acc: 0.993	 Empiric-Loss: 0.02183	 Task-Comp. 0.07549	 Meta-Comp.: 0.707
+(72.3%)	Epoch: 36 	 Batch: 50 	 Objective: 0.8495 	  Acc: 0.99	 Empiric-Loss: 0.0373	 Task-Comp. 0.1057	 Meta-Comp.: 0.7065
+(72.7%)	Epoch: 36 	 Batch: 100 	 Objective: 0.8002 	  Acc: 0.992	 Empiric-Loss: 0.0197	 Task-Comp. 0.07436	 Meta-Comp.: 0.7061
+(73.0%)	Epoch: 36 	 Batch: 150 	 Objective: 0.7886 	  Acc: 0.996	 Empiric-Loss: 0.01606	 Task-Comp. 0.0668	 Meta-Comp.: 0.7058
+(73.4%)	Epoch: 36 	 Batch: 200 	 Objective: 0.7941 	  Acc: 0.994	 Empiric-Loss: 0.01898	 Task-Comp. 0.06971	 Meta-Comp.: 0.7054
+(73.7%)	Epoch: 36 	 Batch: 250 	 Objective: 0.7995 	  Acc: 0.995	 Empiric-Loss: 0.01903	 Task-Comp. 0.07549	 Meta-Comp.: 0.705
+(74.0%)	Epoch: 37 	 Batch: 0 	 Objective: 0.781 	  Acc: 0.997	 Empiric-Loss: 0.009276	 Task-Comp. 0.0671	 Meta-Comp.: 0.7047
+(74.3%)	Epoch: 37 	 Batch: 50 	 Objective: 0.7985 	  Acc: 0.994	 Empiric-Loss: 0.01633	 Task-Comp. 0.07792	 Meta-Comp.: 0.7042
+(74.7%)	Epoch: 37 	 Batch: 100 	 Objective: 0.7978 	  Acc: 0.996	 Empiric-Loss: 0.01588	 Task-Comp. 0.07807	 Meta-Comp.: 0.7039
+(75.0%)	Epoch: 37 	 Batch: 150 	 Objective: 0.7986 	  Acc: 0.993	 Empiric-Loss: 0.02559	 Task-Comp. 0.0695	 Meta-Comp.: 0.7035
+(75.4%)	Epoch: 37 	 Batch: 200 	 Objective: 0.7862 	  Acc: 0.995	 Empiric-Loss: 0.01524	 Task-Comp. 0.06774	 Meta-Comp.: 0.7032
+(75.7%)	Epoch: 37 	 Batch: 250 	 Objective: 0.7844 	  Acc: 0.995	 Empiric-Loss: 0.01587	 Task-Comp. 0.06565	 Meta-Comp.: 0.7028
+(76.0%)	Epoch: 38 	 Batch: 0 	 Objective: 0.7873 	  Acc: 0.994	 Empiric-Loss: 0.01669	 Task-Comp. 0.06804	 Meta-Comp.: 0.7025
+(76.3%)	Epoch: 38 	 Batch: 50 	 Objective: 0.7718 	  Acc: 0.996	 Empiric-Loss: 0.01135	 Task-Comp. 0.05832	 Meta-Comp.: 0.7022
+(76.7%)	Epoch: 38 	 Batch: 100 	 Objective: 0.7815 	  Acc: 0.994	 Empiric-Loss: 0.01686	 Task-Comp. 0.06277	 Meta-Comp.: 0.7019
+(77.0%)	Epoch: 38 	 Batch: 150 	 Objective: 0.8059 	  Acc: 0.992	 Empiric-Loss: 0.02601	 Task-Comp. 0.07844	 Meta-Comp.: 0.7015
+(77.4%)	Epoch: 38 	 Batch: 200 	 Objective: 0.784 	  Acc: 0.995	 Empiric-Loss: 0.01294	 Task-Comp. 0.06995	 Meta-Comp.: 0.7011
+(77.7%)	Epoch: 38 	 Batch: 250 	 Objective: 0.7998 	  Acc: 0.992	 Empiric-Loss: 0.02642	 Task-Comp. 0.07266	 Meta-Comp.: 0.7008
+(78.0%)	Epoch: 39 	 Batch: 0 	 Objective: 0.7911 	  Acc: 0.994	 Empiric-Loss: 0.02167	 Task-Comp. 0.06898	 Meta-Comp.: 0.7005
+(78.3%)	Epoch: 39 	 Batch: 50 	 Objective: 0.7838 	  Acc: 0.993	 Empiric-Loss: 0.0151	 Task-Comp. 0.06862	 Meta-Comp.: 0.7001
+(78.7%)	Epoch: 39 	 Batch: 100 	 Objective: 0.7974 	  Acc: 0.994	 Empiric-Loss: 0.02006	 Task-Comp. 0.07763	 Meta-Comp.: 0.6998
+(79.0%)	Epoch: 39 	 Batch: 150 	 Objective: 0.7937 	  Acc: 0.994	 Empiric-Loss: 0.02112	 Task-Comp. 0.07318	 Meta-Comp.: 0.6994
+(79.4%)	Epoch: 39 	 Batch: 200 	 Objective: 0.7656 	  Acc: 0.997	 Empiric-Loss: 0.008098	 Task-Comp. 0.05846	 Meta-Comp.: 0.6991
+(79.7%)	Epoch: 39 	 Batch: 250 	 Objective: 0.7904 	  Acc: 0.993	 Empiric-Loss: 0.02097	 Task-Comp. 0.07069	 Meta-Comp.: 0.6988
+(80.0%)	Epoch: 40 	 Batch: 0 	 Objective: 0.809 	  Acc: 0.993	 Empiric-Loss: 0.02832	 Task-Comp. 0.08219	 Meta-Comp.: 0.6984
+(80.3%)	Epoch: 40 	 Batch: 50 	 Objective: 0.7892 	  Acc: 0.994	 Empiric-Loss: 0.01608	 Task-Comp. 0.07498	 Meta-Comp.: 0.6981
+(80.7%)	Epoch: 40 	 Batch: 100 	 Objective: 0.7704 	  Acc: 0.997	 Empiric-Loss: 0.01176	 Task-Comp. 0.0609	 Meta-Comp.: 0.6978
+(81.0%)	Epoch: 40 	 Batch: 150 	 Objective: 0.7817 	  Acc: 0.994	 Empiric-Loss: 0.02183	 Task-Comp. 0.06242	 Meta-Comp.: 0.6975
+(81.4%)	Epoch: 40 	 Batch: 200 	 Objective: 0.7722 	  Acc: 0.997	 Empiric-Loss: 0.01277	 Task-Comp. 0.0623	 Meta-Comp.: 0.6972
+(81.7%)	Epoch: 40 	 Batch: 250 	 Objective: 0.774 	  Acc: 0.998	 Empiric-Loss: 0.01041	 Task-Comp. 0.06676	 Meta-Comp.: 0.6968
+(82.0%)	Epoch: 41 	 Batch: 0 	 Objective: 0.7894 	  Acc: 0.996	 Empiric-Loss: 0.01754	 Task-Comp. 0.07535	 Meta-Comp.: 0.6965
+(82.3%)	Epoch: 41 	 Batch: 50 	 Objective: 0.8165 	  Acc: 0.992	 Empiric-Loss: 0.02709	 Task-Comp. 0.09331	 Meta-Comp.: 0.6961
+(82.7%)	Epoch: 41 	 Batch: 100 	 Objective: 0.7961 	  Acc: 0.992	 Empiric-Loss: 0.02852	 Task-Comp. 0.07175	 Meta-Comp.: 0.6958
+(83.0%)	Epoch: 41 	 Batch: 150 	 Objective: 0.768 	  Acc: 0.996	 Empiric-Loss: 0.0119	 Task-Comp. 0.06057	 Meta-Comp.: 0.6955
+(83.4%)	Epoch: 41 	 Batch: 200 	 Objective: 0.7878 	  Acc: 0.992	 Empiric-Loss: 0.02286	 Task-Comp. 0.0697	 Meta-Comp.: 0.6952
+(83.7%)	Epoch: 41 	 Batch: 250 	 Objective: 0.7813 	  Acc: 0.993	 Empiric-Loss: 0.01992	 Task-Comp. 0.06643	 Meta-Comp.: 0.6949
+(84.0%)	Epoch: 42 	 Batch: 0 	 Objective: 0.7706 	  Acc: 0.996	 Empiric-Loss: 0.01375	 Task-Comp. 0.06213	 Meta-Comp.: 0.6947
+(84.3%)	Epoch: 42 	 Batch: 50 	 Objective: 0.7732 	  Acc: 0.995	 Empiric-Loss: 0.01371	 Task-Comp. 0.06512	 Meta-Comp.: 0.6944
+(84.7%)	Epoch: 42 	 Batch: 100 	 Objective: 0.7765 	  Acc: 0.993	 Empiric-Loss: 0.01751	 Task-Comp. 0.06487	 Meta-Comp.: 0.6941
+(85.0%)	Epoch: 42 	 Batch: 150 	 Objective: 0.774 	  Acc: 0.997	 Empiric-Loss: 0.01018	 Task-Comp. 0.07006	 Meta-Comp.: 0.6937
+(85.4%)	Epoch: 42 	 Batch: 200 	 Objective: 0.7681 	  Acc: 0.996	 Empiric-Loss: 0.01085	 Task-Comp. 0.06375	 Meta-Comp.: 0.6935
+(85.7%)	Epoch: 42 	 Batch: 250 	 Objective: 0.7783 	  Acc: 0.994	 Empiric-Loss: 0.01722	 Task-Comp. 0.06791	 Meta-Comp.: 0.6931
+(86.0%)	Epoch: 43 	 Batch: 0 	 Objective: 0.7851 	  Acc: 0.993	 Empiric-Loss: 0.01734	 Task-Comp. 0.07484	 Meta-Comp.: 0.6929
+(86.3%)	Epoch: 43 	 Batch: 50 	 Objective: 0.7936 	  Acc: 0.994	 Empiric-Loss: 0.01863	 Task-Comp. 0.0824	 Meta-Comp.: 0.6925
+(86.7%)	Epoch: 43 	 Batch: 100 	 Objective: 0.7777 	  Acc: 0.994	 Empiric-Loss: 0.01542	 Task-Comp. 0.07001	 Meta-Comp.: 0.6922
+(87.0%)	Epoch: 43 	 Batch: 150 	 Objective: 0.786 	  Acc: 0.993	 Empiric-Loss: 0.02391	 Task-Comp. 0.07017	 Meta-Comp.: 0.6919
+(87.4%)	Epoch: 43 	 Batch: 200 	 Objective: 0.7724 	  Acc: 0.996	 Empiric-Loss: 0.01837	 Task-Comp. 0.06237	 Meta-Comp.: 0.6917
+(87.7%)	Epoch: 43 	 Batch: 250 	 Objective: 0.7671 	  Acc: 0.994	 Empiric-Loss: 0.01278	 Task-Comp. 0.06298	 Meta-Comp.: 0.6914
+(88.0%)	Epoch: 44 	 Batch: 0 	 Objective: 0.7734 	  Acc: 0.995	 Empiric-Loss: 0.01783	 Task-Comp. 0.06449	 Meta-Comp.: 0.6911
+(88.3%)	Epoch: 44 	 Batch: 50 	 Objective: 0.7709 	  Acc: 0.994	 Empiric-Loss: 0.01672	 Task-Comp. 0.06329	 Meta-Comp.: 0.6909
+(88.7%)	Epoch: 44 	 Batch: 100 	 Objective: 0.7864 	  Acc: 0.994	 Empiric-Loss: 0.02066	 Task-Comp. 0.07521	 Meta-Comp.: 0.6905
+(89.0%)	Epoch: 44 	 Batch: 150 	 Objective: 0.7816 	  Acc: 0.995	 Empiric-Loss: 0.01801	 Task-Comp. 0.07331	 Meta-Comp.: 0.6902
+(89.4%)	Epoch: 44 	 Batch: 200 	 Objective: 0.7682 	  Acc: 0.996	 Empiric-Loss: 0.01127	 Task-Comp. 0.06695	 Meta-Comp.: 0.69
+(89.7%)	Epoch: 44 	 Batch: 250 	 Objective: 0.7798 	  Acc: 0.997	 Empiric-Loss: 0.01523	 Task-Comp. 0.07497	 Meta-Comp.: 0.6896
+(90.0%)	Epoch: 45 	 Batch: 0 	 Objective: 0.7646 	  Acc: 0.995	 Empiric-Loss: 0.01411	 Task-Comp. 0.06103	 Meta-Comp.: 0.6894
+(90.3%)	Epoch: 45 	 Batch: 50 	 Objective: 0.7582 	  Acc: 0.996	 Empiric-Loss: 0.01105	 Task-Comp. 0.05798	 Meta-Comp.: 0.6892
+(90.7%)	Epoch: 45 	 Batch: 100 	 Objective: 0.7726 	  Acc: 0.995	 Empiric-Loss: 0.01796	 Task-Comp. 0.06574	 Meta-Comp.: 0.6889
+(91.0%)	Epoch: 45 	 Batch: 150 	 Objective: 0.7702 	  Acc: 0.993	 Empiric-Loss: 0.0191	 Task-Comp. 0.06246	 Meta-Comp.: 0.6886
+(91.4%)	Epoch: 45 	 Batch: 200 	 Objective: 0.764 	  Acc: 0.996	 Empiric-Loss: 0.008907	 Task-Comp. 0.06675	 Meta-Comp.: 0.6884
+(91.7%)	Epoch: 45 	 Batch: 250 	 Objective: 0.7764 	  Acc: 0.996	 Empiric-Loss: 0.01377	 Task-Comp. 0.07461	 Meta-Comp.: 0.688
+(92.0%)	Epoch: 46 	 Batch: 0 	 Objective: 0.782 	  Acc: 0.994	 Empiric-Loss: 0.02138	 Task-Comp. 0.07279	 Meta-Comp.: 0.6878
+(92.3%)	Epoch: 46 	 Batch: 50 	 Objective: 0.7827 	  Acc: 0.996	 Empiric-Loss: 0.01606	 Task-Comp. 0.07913	 Meta-Comp.: 0.6875
+(92.7%)	Epoch: 46 	 Batch: 100 	 Objective: 0.7774 	  Acc: 0.993	 Empiric-Loss: 0.02041	 Task-Comp. 0.0698	 Meta-Comp.: 0.6872
+(93.0%)	Epoch: 46 	 Batch: 150 	 Objective: 0.7603 	  Acc: 0.996	 Empiric-Loss: 0.01131	 Task-Comp. 0.062	 Meta-Comp.: 0.687
+(93.4%)	Epoch: 46 	 Batch: 200 	 Objective: 0.7767 	  Acc: 0.995	 Empiric-Loss: 0.01946	 Task-Comp. 0.07054	 Meta-Comp.: 0.6867
+(93.7%)	Epoch: 46 	 Batch: 250 	 Objective: 0.7742 	  Acc: 0.996	 Empiric-Loss: 0.01873	 Task-Comp. 0.06908	 Meta-Comp.: 0.6864
+(94.0%)	Epoch: 47 	 Batch: 0 	 Objective: 0.7767 	  Acc: 0.994	 Empiric-Loss: 0.01887	 Task-Comp. 0.07162	 Meta-Comp.: 0.6862
+(94.3%)	Epoch: 47 	 Batch: 50 	 Objective: 0.7655 	  Acc: 0.997	 Empiric-Loss: 0.01097	 Task-Comp. 0.06858	 Meta-Comp.: 0.6859
+(94.7%)	Epoch: 47 	 Batch: 100 	 Objective: 0.7693 	  Acc: 0.994	 Empiric-Loss: 0.01761	 Task-Comp. 0.06605	 Meta-Comp.: 0.6857
+(95.0%)	Epoch: 47 	 Batch: 150 	 Objective: 0.7554 	  Acc: 0.996	 Empiric-Loss: 0.01251	 Task-Comp. 0.05743	 Meta-Comp.: 0.6854
+(95.4%)	Epoch: 47 	 Batch: 200 	 Objective: 0.7721 	  Acc: 0.993	 Empiric-Loss: 0.01941	 Task-Comp. 0.06751	 Meta-Comp.: 0.6852
+(95.7%)	Epoch: 47 	 Batch: 250 	 Objective: 0.7609 	  Acc: 0.995	 Empiric-Loss: 0.0147	 Task-Comp. 0.06121	 Meta-Comp.: 0.6849
+(96.0%)	Epoch: 48 	 Batch: 0 	 Objective: 0.7442 	  Acc: 0.997	 Empiric-Loss: 0.006807	 Task-Comp. 0.05268	 Meta-Comp.: 0.6847
+(96.3%)	Epoch: 48 	 Batch: 50 	 Objective: 0.782 	  Acc: 0.994	 Empiric-Loss: 0.01665	 Task-Comp. 0.08096	 Meta-Comp.: 0.6844
+(96.7%)	Epoch: 48 	 Batch: 100 	 Objective: 0.776 	  Acc: 0.993	 Empiric-Loss: 0.01799	 Task-Comp. 0.07388	 Meta-Comp.: 0.6842
+(97.0%)	Epoch: 48 	 Batch: 150 	 Objective: 0.7742 	  Acc: 0.995	 Empiric-Loss: 0.02055	 Task-Comp. 0.06974	 Meta-Comp.: 0.6839
+(97.4%)	Epoch: 48 	 Batch: 200 	 Objective: 0.7478 	  Acc: 0.995	 Empiric-Loss: 0.01088	 Task-Comp. 0.0532	 Meta-Comp.: 0.6837
+(97.7%)	Epoch: 48 	 Batch: 250 	 Objective: 0.7541 	  Acc: 0.995	 Empiric-Loss: 0.01546	 Task-Comp. 0.05515	 Meta-Comp.: 0.6835
+(98.0%)	Epoch: 49 	 Batch: 0 	 Objective: 0.7691 	  Acc: 0.993	 Empiric-Loss: 0.02094	 Task-Comp. 0.06489	 Meta-Comp.: 0.6833
+(98.3%)	Epoch: 49 	 Batch: 50 	 Objective: 0.7591 	  Acc: 0.996	 Empiric-Loss: 0.01085	 Task-Comp. 0.06527	 Meta-Comp.: 0.683
+(98.7%)	Epoch: 49 	 Batch: 100 	 Objective: 0.7554 	  Acc: 0.996	 Empiric-Loss: 0.01333	 Task-Comp. 0.05936	 Meta-Comp.: 0.6827
+(99.0%)	Epoch: 49 	 Batch: 150 	 Objective: 0.7516 	  Acc: 0.996	 Empiric-Loss: 0.01315	 Task-Comp. 0.05588	 Meta-Comp.: 0.6825
+(99.4%)	Epoch: 49 	 Batch: 200 	 Objective: 0.7518 	  Acc: 0.996	 Empiric-Loss: 0.01302	 Task-Comp. 0.0565	 Meta-Comp.: 0.6823
+(99.7%)	Epoch: 49 	 Batch: 250 	 Objective: 0.7531 	  Acc: 0.996	 Empiric-Loss: 0.01133	 Task-Comp. 0.05971	 Meta-Comp.: 0.682
+Train Task 0, Test set: MaxPosterior -  Average loss: 0.000707, Accuracy: 0.982 (of 10000 samples)
+
+Train Task 1, Test set: MaxPosterior -  Average loss: 0.0008504, Accuracy: 0.981 (of 10000 samples)
+
+Train Task 2, Test set: MaxPosterior -  Average loss: 0.0006352, Accuracy: 0.982 (of 10000 samples)
+
+Train Task 3, Test set: MaxPosterior -  Average loss: 0.0007069, Accuracy: 0.983 (of 10000 samples)
+
+Train Task 4, Test set: MaxPosterior -  Average loss: 0.0007173, Accuracy: 0.982 (of 10000 samples)
+
+Train Task 5, Test set: MaxPosterior -  Average loss: 0.0007258, Accuracy: 0.983 (of 10000 samples)
+
+Train Task 6, Test set: MaxPosterior -  Average loss: 0.000719, Accuracy: 0.982 (of 10000 samples)
+
+Train Task 7, Test set: MaxPosterior -  Average loss: 0.0006679, Accuracy: 0.981 (of 10000 samples)
+
+Train Task 8, Test set: MaxPosterior -  Average loss: 0.0008897, Accuracy: 0.977 (of 10000 samples)
+
+Train Task 9, Test set: MaxPosterior -  Average loss: 0.0007265, Accuracy: 0.98 (of 10000 samples)
+
+Run finished at:  2020-11-24 16:32:41
+MaxPosterior Average Test Error: 1.87%	 Runtime: 7721.807046034839 [sec]
+Trained prior saved in saved/ShuffledPixels200_TasksN/10/model.pt
+---- Generating 20 test-tasks with at most None training samples
+Meta-Testing with transferred prior....
+MaxPosterior Average Test Error: 2.67%	 Runtime: 2.7266661687754095 [sec]
+MaxPosterior Average Test Error: 2.36%	 Runtime: 2.7608334189280868 [sec]
+MaxPosterior Average Test Error: 2.44%	 Runtime: 2.7307883920148015 [sec]
+MaxPosterior Average Test Error: 2.16%	 Runtime: 2.797545193694532 [sec]
+MaxPosterior Average Test Error: 2.71%	 Runtime: 2.753984931856394 [sec]
+MaxPosterior Average Test Error: 2.28%	 Runtime: 2.7706005834043026 [sec]
+MaxPosterior Average Test Error: 2.31%	 Runtime: 2.7578884260728955 [sec]
+MaxPosterior Average Test Error: 2.45%	 Runtime: 2.7263858038932085 [sec]
+MaxPosterior Average Test Error: 2.73%	 Runtime: 2.746692900080234 [sec]
+MaxPosterior Average Test Error: 2.46%	 Runtime: 2.7406601468101144 [sec]
+MaxPosterior Average Test Error: 2.38%	 Runtime: 2.7556813238188624 [sec]
+MaxPosterior Average Test Error: 2.4%	 Runtime: 2.681055692024529 [sec]
+MaxPosterior Average Test Error: 2.63%	 Runtime: 2.740843958221376 [sec]
+MaxPosterior Average Test Error: 2.17%	 Runtime: 2.7320568999275565 [sec]
+MaxPosterior Average Test Error: 2.57%	 Runtime: 2.7147014951333404 [sec]
+MaxPosterior Average Test Error: 2.28%	 Runtime: 2.696610163897276 [sec]
+MaxPosterior Average Test Error: 2.29%	 Runtime: 2.7412756490521133 [sec]
+MaxPosterior Average Test Error: 2.37%	 Runtime: 2.642577512655407 [sec]
+MaxPosterior Average Test Error: 2.66%	 Runtime: 2.4773738756775856 [sec]
+MaxPosterior Average Test Error: 2.32%	 Runtime: 2.5174602400511503 [sec]
+----- Meta-learner prior model paramenters: mean_list[-5.9349966  -6.48615789 -6.28885603 -7.99033213], std_list: [0.47632697 0.39415482 0.52836674 0.60354745]
+Total runtime: 06 hours, 50 minutes and 54 seconds
+----- Final Results: 
+----- Meta-Testing - Avg test err: 2.432%, STD: 0.1708%, Confidence interval: 0.0007485%
+----- Meta-Testing - Avg test loss: 0.0009403, STD: 8.837e-05, Confidence interval: 3.873e-05
+----- Meta-Testing - Avg test bound: 0.1284, STD: 0.06553, Confidence interval: 0.02872
