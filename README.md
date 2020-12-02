@@ -14,6 +14,7 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
    version of libraries
    
 - 'Code organization chart'
+
 ├────.DS_Store
 ├────Data_Path.py
 ├────MAML/
@@ -24,8 +25,7 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
 │    ├────meta_train_MAML_infinite_tasks.py
 │    ├────run_MAML_PermuteLabels.py
 │    └────run_MAML_ShuffledPixels.py
-├────Meta_DataDependentPrior/
-│    ├────.DS_Store
+├────Meta_DataDependentPrior
 │    ├────DP_Analyze_Prior.py
 │    ├────DP_AvargeTransfer.py
 │    ├────DP_Get_Objective_MPB.py
@@ -38,17 +38,15 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
 │    ├────DP_show_TasksN_Plots.py
 │    ├────DP_test_data_prior_learning.py
 │    ├────DP_train_data_prior_learning.py
-│    └────saved/
-├────ML_data_sets/
-│    └────.DS_Store
-├────Models/
+│    └────saved
+├────ML_data_sets
+├────Models
 │    ├────deterministic_models.py
 │    ├────layer_inits.py
 │    ├────stochastic_inits.py
 │    ├────stochastic_layers.py
 │    └────stochastic_models.py
-├────PriorMetaLearning/
-│    ├────.DS_Store
+├────PriorMetaLearning
 │    ├────Analyze_Prior.py
 │    ├────AvargeTransfer.py
 │    ├────Get_Objective_MPB.py
@@ -65,7 +63,7 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
 ├────README.md
 ├────requirements.txt
 ├────tree.py
-└────Utils/
+└────Utils
 │    ├────Bayes_utils.py
 │    ├────common.py
 │    ├────data_gen.py
