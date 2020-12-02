@@ -15,17 +15,17 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
    
 - 'Code organization chart'
 
-├────.DS_Store
-├────Data_Path.py
-├────MAML/
-│    ├────main_MAML.py
-│    ├────MAML_meta_step.py
-│    ├────meta_test_MAML.py
-│    ├────meta_train_MAML_finite_tasks.py
-│    ├────meta_train_MAML_infinite_tasks.py
-│    ├────run_MAML_PermuteLabels.py
-│    └────run_MAML_ShuffledPixels.py
-├────Meta_DataDependentPrior
+|----.DS_Store
+|----Data_Path.py
+|----MAML/
+|    |----main_MAML.py
+|    |----MAML_meta_step.py
+|    |----meta_test_MAML.py
+|    |----meta_train_MAML_finite_tasks.py
+|    |----meta_train_MAML_infinite_tasks.py
+|    |----run_MAML_PermuteLabels.py
+|    |----run_MAML_ShuffledPixels.py
+|----Meta_DataDependentPrior
 │    ├────DP_Analyze_Prior.py
 │    ├────DP_AvargeTransfer.py
 │    ├────DP_Get_Objective_MPB.py
@@ -46,7 +46,7 @@ Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
 │    ├────stochastic_inits.py
 │    ├────stochastic_layers.py
 │    └────stochastic_models.py
-├────PriorMetaLearning
+├----PriorMetaLearning
 │    ├────Analyze_Prior.py
 │    ├────AvargeTransfer.py
 │    ├────Get_Objective_MPB.py
