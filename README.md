@@ -1,4 +1,4 @@
-Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
+# Meta-learning-PAC-Bayes-bound-with-data-depedent-prior
 
 - 'PriorMetaLearning'
    to analyze the influence of different PAC-Bayes bounds with permuted labels and pixels
